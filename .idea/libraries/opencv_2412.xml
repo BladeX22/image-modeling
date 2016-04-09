@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="opencv-2412">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/rafal/opencv-2.4.12/build/bin/opencv-2412.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/rafal/opencv-2.4.12/build/bin/opencv-2412.jar!/" />
+    </SOURCES>
+  </library>
+</component>
