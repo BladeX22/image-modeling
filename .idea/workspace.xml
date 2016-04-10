@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b355f140-5824-42f9-846d-eddd7e1efcaa" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Idea/test.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Idea/Camera.class" afterPath="$PROJECT_DIR$/out/production/Idea/Camera.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Idea/FaceDetector.class" afterPath="$PROJECT_DIR$/out/production/Idea/FaceDetector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/output.png" afterPath="$PROJECT_DIR$/output/output.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/Camera.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/Camera.java" afterPath="$PROJECT_DIR$/src/java/Camera.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/FaceDetector.java" afterPath="$PROJECT_DIR$/src/java/FaceDetector.java" />
     </list>
     <ignored path="facial_recognition.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FaceDetector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FaceDetector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/FaceDetector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
@@ -43,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartApp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StartApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/StartApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -648,12 +644,12 @@
       <workItem from="1460228725820" duration="1064000" />
       <workItem from="1460229805179" duration="1340000" />
       <workItem from="1460233373278" duration="1815000" />
-      <workItem from="1460290298276" duration="5039000" />
+      <workItem from="1460290298276" duration="5265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9258000" />
+    <option name="totallyTimeSpent" value="9484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -835,22 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/StartApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/rafal/opencv-2.4.12/build/bin/opencv-2412.jar!/org/opencv/highgui/VideoCapture.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-142">
@@ -871,6 +851,22 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/StartApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
