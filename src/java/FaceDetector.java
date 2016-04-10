@@ -1,5 +1,6 @@
 import org.opencv.core.*;
 import org.opencv.highgui.Highgui;
+import org.opencv.highgui.VideoCapture;
 import org.opencv.objdetect.CascadeClassifier;
 
 import java.io.IOException;
@@ -10,32 +11,30 @@ import java.io.IOException;
 public class FaceDetector {
     void detect() throws IOException, InterruptedException {
 
-        Camera camera = new Camera();
-        camera.run();
-
-        Thread.sleep(10000);
-
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+
+        VideoCapture camera = new VideoCapture(0);
+
         System.out.println("\nRunning FaceDetector");
 
         CascadeClassifier faceDetector = new CascadeClassifier(FaceDetector.
                 class.getResource("haarcascade_frontalface_alt.xml").getPath());
 
-        Mat image = Highgui
-                .imread(FaceDetector.class.getResource("test.png").getPath());
+        Mat frame = new Mat();
+        camera.read(frame);
 
         MatOfRect faceDetections = new MatOfRect();
-        faceDetector.detectMultiScale(image, faceDetections);
+        faceDetector.detectMultiScale(frame, faceDetections);
 
         System.out.println(String.format("Detected %s faces", faceDetections.toArray().length));
 
         for (Rect rect : faceDetections.toArray()) {
-            Core.rectangle(image, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height),
+            Core.rectangle(frame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height),
                     new Scalar(0, 255, 0));
         }
 
         String filename = "output/output.png";
         System.out.println(String.format("Writing %s", filename));
-        Highgui.imwrite(filename, image);
+        Highgui.imwrite(filename, frame);
     }
 }
