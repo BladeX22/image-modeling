@@ -1,3 +1,5 @@
+package face_detection;
+
 import org.opencv.core.*;
 import org.opencv.highgui.Highgui;
 import org.opencv.objdetect.CascadeClassifier;
@@ -13,7 +15,7 @@ public class FaceDetector {
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
 
-        System.out.println("\nRunning FaceDetector");
+        System.out.println("\nRunning face_detection.FaceDetector");
 
         CascadeClassifier faceDetector = new CascadeClassifier(FaceDetector.
                 class.getResource("haarcascade_frontalface_alt.xml").getPath());
@@ -26,7 +28,7 @@ public class FaceDetector {
 
         for (Rect rect : faceDetections.toArray()) {
             Core.rectangle(image, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height),
-                    new Scalar(0, 120, 120));
+                    new Scalar(0, 120, 0));
         }
 
         String filename = "output/output" + sign + ".png";
